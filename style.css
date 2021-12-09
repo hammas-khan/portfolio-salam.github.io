@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+
+}
+
+.object-cover.rounded{
+    transition: all 0.3s ease-in-out;
+}
+.object-cover.rounded:hover{
+    box-shadow: 5px 5px 20px 0.3px #000;
+    transition: all 0.3s ease-in-out;
+}
+.back{
+    background-size: cover;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    z-index: initial;
+}
+.back2{
+    background-size: cover;
+    background: linear-gradient(to right, #ffdce4, #f5d0c9);
+    z-index: initial;
+}
+.backnav{
+    box-shadow: 5px 5px 20px rgb(54, 54, 54);
+    top: 0;
+    position: sticky;
+    background-size: cover;
+    background: linear-gradient(to right, #e4e4e4, #ffbeb3);
+    z-index: 1;
+}
+.intro{
+    color: blanchedalmond;
+}
+.ml-3{
+    color: black;
+}
+.-m-12{
+    margin: 0;
+}
+.px-4, .py-3{
+    padding-top: 1em;
+    text-align: center;
+    color: black;
+    font-size: large;
+}
+.paragraph {
+    color: blanchedalmond;
+    padding-top: 50px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.h2c{
+    color: blanchedalmond;
+}
+.divpara{
+    backdrop-filter: blur(30px);
+}
+.paraback{
+    background-attachment: fixed;
+    background-image: url("mech.jpg");
+    background-size: cover;
+}
+.burger{
+    position: absolute;
+    right: 3%;
+    top: 15px;
+    display: none;
+    width: 50px;
+}
+.ab{
+    transition: all 0.2s ease-in-out;
+    margin-right: 20px;
+}
+.ab:hover{
+    margin-right: 20px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+.end{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: #ff4b2b;
+}
+.frame{
+    width: 50%;
+    background-color: #ff4b2b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+.map{
+    max-width: 92%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(116, 116, 116);
+}
+.icons{
+    background-color: #ff4b2b;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+.cont{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    background-color: #ff4b2b;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: honeydew;
+}
+.address h1{
+    font-size: 24px;
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    color: seashell;
+}
+.address p{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: seashell;
+}
+.address{
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-top: 1%;
+}   
+.whatsapp{
+    padding-top: 40px;
+    text-decoration: none;
+    list-style: none;
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whatsapp li{
+    color: seashell;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+}
+.whatsapp img{
+    margin-right: 20px;
+    width: 70px;
+}
+.facebook{
+    padding-top: 30px;
+    text-decoration: none;
+    list-style: none;
+    flex-direction: row-reverse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.facebook li{
+    color: seashell;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+}
+.facebook img{
+    margin-bottom: 10px;
+    width: 20%;
+}
+
+@media only screen and (max-width: 482px){
+    .flex-wrap{
+        flex-direction: column;
+    }
+    .navbar{
+        transition: all 0.3s ease-in-out;
+        display: none;
+    }
+    .burger{
+        -webkit-tap-highlight-color: transparent;
+        display: block;
+    }
+    .mb-4{
+        margin-bottom: 0;
+    }
+    .paragraph{
+        font-size: 17px;
+        padding-top: 12px;
+    }
+    .navbara{
+        margin: 3px;
+    }
+    .end{
+        flex-direction: column;
+    }
+    .frame{
+        width: 90%;
+        height: 50vh;
+    }
+    .map{
+        height: 60%;
+        margin-bottom: 0%;
+    }
+    .icons{
+        width: 90%;
+    }
+    .facebook{
+        flex-direction: column-reverse;
+        text-align: left;
+    }
+    .facebook img{
+        width: 42%;
+    }
+    .al{
+        text-align: center;
+        font-size: 16px;
+    }
+    .cont{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 30px;
+    }
+}
+
